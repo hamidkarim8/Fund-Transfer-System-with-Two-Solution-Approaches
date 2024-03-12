@@ -1,9 +1,9 @@
 package DecoratorPackage;
 
-public class AuthorizationDecorator implements Transaction {
+public class Authorization implements Transaction {
     private Transaction decoratedTransaction;
     
-    public AuthorizationDecorator(Transaction decoratedTransaction) {
+    public Authorization(Transaction decoratedTransaction) {
         this.decoratedTransaction = decoratedTransaction;
     }
 
